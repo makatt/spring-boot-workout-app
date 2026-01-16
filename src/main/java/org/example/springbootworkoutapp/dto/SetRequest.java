@@ -7,10 +7,9 @@ import lombok.Data;
 @Schema(description = "Запрос на создание/обновление подхода")
 public class SetRequest {
 
-    @NotBlank(message = "Название подхода обязательно")
+
     private int reps;
 
-    @NotBlank(message = "Название веса обязательно")
     private Float weight;
 
     public Float getWeight() {

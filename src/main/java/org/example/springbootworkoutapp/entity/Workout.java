@@ -3,7 +3,7 @@ package org.example.springbootworkoutapp.entity;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
+import java.util.Date;
 
 @Entity
 @Table(name = "workout", schema = "workout")
@@ -11,10 +11,11 @@ public class Workout {
 
     @Id
     @Column(name = "workout_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int workout_id;
 
     @Column(name = "date")
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     public int getWorkout_id() {

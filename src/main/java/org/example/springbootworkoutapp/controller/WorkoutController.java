@@ -46,4 +46,5 @@ public class WorkoutController {
     public void deleteAllWorkouts() {
         workoutService.deleteAllWorkouts();
     }
+
 }
