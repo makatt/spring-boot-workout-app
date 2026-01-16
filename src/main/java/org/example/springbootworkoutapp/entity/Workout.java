@@ -12,6 +12,7 @@ public class Workout {
     @Id
     @Column(name = "workout_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int workout_id;
 
     @Column(name = "date")
