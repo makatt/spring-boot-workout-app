@@ -2,7 +2,6 @@ package org.example.springbootworkoutapp.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
 
 @Schema(description = "Запрос на создание/обновление подхода")
 public class SetRequest {
